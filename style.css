@@ -1,0 +1,94 @@
+svg{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    height: 100%;
+}
+
+div.sidenav{
+    background: #42a5f5;
+    height: 100%;
+    padding: 0;
+}
+
+.drag{
+    background: #e3f2fd;
+    height: 100%;
+}
+
+.element_item{
+    width: 100%;
+    padding: 8px 4px;
+    border: 1px solid #0d47a1;
+}
+
+#drag_body{
+    padding: 0 4px 4px 0;
+    border: 1px solid black;
+}
+
+.draggable{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    background: #f44336 ;
+    border: 2px solid #d50000;
+    border-collapse: collapse;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.draggable:hover{
+    background: #d32f2f;
+}
+
+.draggable:hover [data-role="input"],
+.draggable:hover [data-role="output"]{
+    background: #d32f2f;
+}
+
+
+.draggable-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.draggable-content p{
+    margin: 0;
+}
+
+.draggable-event{
+    position: absolute;
+    background: #f44336;
+    opacity: .3;
+    width: 20px;
+    height: inherit;
+}
+
+.draggable-event:hover{
+    background: #f44336 !important;
+}
+
+.draggable-event[data-role="output"]{
+    border-radius: 0 5px 5px 0; 
+    transform: translate(78px, -48px);
+}
+
+.draggable-event[data-role="input"]{
+    border-radius: 5px 0 0 5px; 
+    transform: translate(-2px, -2px);
+}
+
+.draggable-event:hover{
+    opacity: 1;
+}
